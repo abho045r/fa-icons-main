@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+
+.circle-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 100% !important;
+    margin-left: 5px;
+    color: #ffffff;
+   font-size: 20px;
+   cursor: pointer;
+   border: 0;
+   position: relative;
+   left: 10px;
+   margin-right: 6px;
+}
+.container {
+    max-width: 400px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+.grid-Wrapper{
+    background-color: #fff;
+    padding: 25px 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.circle-btn.active::after{
+    content: "";
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+}
+.circle-btn.active::before{
+    content: "";
+    height: 6px;
+    width:15px;
+    position: absolute;
+    top: 20px;
+    right: 18px;
+    border-radius: 2px;
+    position: absolute;
+    z-index: 1;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #ffffff;
+    font-weight: bolder;
+    z-index: 11;
+    transform: rotate(-45deg);
+}
+
+.brown{
+background-color: brown !important;
+}
+.red{
+background-color: red !important;
+}
+.green{
+background-color: green !important;
+}
+.pink{
+background-color: pink !important;
+}
+.cyan{
+background-color: cyan !important;
+}
+.yellow{
+background-color: yellow !important;
+}
+.blue{
+background-color: blue !important;
+}
+.purple{
+background-color: purple !important;
+}
+.orange{
+background-color: orange !important;
+}
+.grey{
+background-color: grey !important;
+}

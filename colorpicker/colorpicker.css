@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 400px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-Wrapper {
+    background-color: #fff;
+    padding: 25px 13px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.rounded-btn {
+    width: 50px !important;
+    height: 50px !important;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    border: 0;
+    position: relative;
+    left: 4px;
+    margin-right: 6px;
+}
+
+.rounded-btn.active:after {
+    content: "";
+    height: 20px;
+    width: 20px;
+    position: absolute;
+
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+
+}
+
+.rounded-btn.active:before {
+    content: "";
+    height: 4px;
+    width: 11px;
+    position: absolute;
+    top: 18px;
+    right: 14px;
+    border-radius: 2px;
+    position: absolute;
+    z-index: 1;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #ffffff;
+    z-index: 11;
+    transform: rotate(-45deg);
+}
+
+.rounded-btn:hover {
+    font-size: 13px;
+}
+
+.brown {
+    background-color: brown !important;
+}
+
+.red {
+    background-color: red !important;
+    border: 2px solid red;
+}
+
+.green {
+    background-color: green !important;
+}
+
+.blue {
+    background-color: blue !important;
+}
+
+.purple {
+    background-color: purple !important;
+}
+
+.yellow {
+    background-color: yellow !important;
+}
+
+.orange {
+    background-color: orange !important;
+}
+
+.cyan {
+    background-color: cyan !important;
+}
+
+.grey {
+    background-color: grey !important;
+}
+
+span#selectedBox {
+    font-size: 20px;
+    background-color: brown;
+    color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+p.mytext {
+    display: block;
+    margin-bottom: 50px;
+}
+
+#textColor {
+    color: brown;
+}
